@@ -16,6 +16,7 @@
     '_static/sphinx_materialdesign_theme.css',
     '_static/fontawesome/all.css',
     '_static/fonts.css',
+    '_static/materialize.extend.min.css',
 ] %}
 
     {%- block header %}
@@ -35,7 +36,9 @@
 
 {%- block document %}
         <div class="page-content">
-        {% block body %} {% endblock %}
+        {% block body %}
+        <script type="text/javascript" src="{{ pathto('_static/materialize.min.js', 1) }} "></script>
+        {% endblock %}
         </div>
         <div class="side-doc-outline">
             <div class="side-doc-outline--content">
