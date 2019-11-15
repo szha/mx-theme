@@ -11,6 +11,7 @@ setup(
     packages = ['mxtheme'],
     include_package_data=True,
     license= 'MIT License',
+    install_requires=['sphinx'],
     entry_points = {
         'sphinx.html_themes': [
             'mxtheme = mxtheme',
