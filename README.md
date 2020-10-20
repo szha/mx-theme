@@ -56,6 +56,13 @@ Last, build css and js
 npm run build
 ```
 
+Build package
+
+```
+python setup.py sdist
+twine upload dist/*
+```
+
 ## Acknowledgment
 
 
