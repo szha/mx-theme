@@ -11,3 +11,7 @@ def get_path():
 
 def setup(app):
     app.add_html_theme('mxtheme', package_dir)
+    return {
+        'version': __version__,
+        'parallel_read_safe': True
+    }
